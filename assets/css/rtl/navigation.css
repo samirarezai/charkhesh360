@@ -1,0 +1,35 @@
+.navigation{
+
+}
+.navigation .navigate{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navigation .navbar{
+    padding: 8px 0;
+}
+.navigation .navbar-brand{
+
+}
+.navigation .navbar-nav{
+    padding-right: 0;
+}
+@media screen and (min-width: 992px){
+    .navigation .navbar{
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .navigation .navigate{
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+}
