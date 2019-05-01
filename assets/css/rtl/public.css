@@ -5,3 +5,23 @@ body{
     font-family: Shabnam , Tahoma;
     text-align: right;
 }
+header{
+    background: url(../../img/01617830_ShibuyaCrossingView_360VR8K_h265-1024x512.jpg) no-repeat bottom right;
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+
+}
+header .layer {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(59, 42, 76, 0.86);
+   /* background: rgba(23, 9, 9, 0.8);
+    background: rgba(82, 62, 62, 0.8);*/
+    background: rgba(47, 40, 40, 0.8);
+    width: 100%;
+    height: 100%;
+}
