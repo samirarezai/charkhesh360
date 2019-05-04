@@ -1,5 +1,11 @@
 .navigation{
 padding: 30px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    flex: 0 0 auto;
 }
 .navigation .navigate{
     width: 100%;
@@ -11,7 +17,11 @@ padding: 30px 0;
 .navigation .navbar{
     padding: 8px 0;
 }
-/*logo design*/
+.navigation .navbar.navbar-style .navbar-toggler:focus {
+    border: 0;
+    outline: 0;
+}
+/*logo design
 .navigation .navbar-brand{
     font-family: 'Arvo';
     color: rgba(0, 0, 0, 0.6);
@@ -20,20 +30,20 @@ font-size: 1rem;
     text-shadow: -2px 3px 3px #868686;
 }
 .navigation .navbar-brand:first-letter{
-    /*color: rgba(0, 0, 0, 0.6);*/
+    /*color: rgba(0, 0, 0, 0.6);*//*
 }
 .navigation .navbar-brand .number-logo {
     display: block;
     color: #d72821;
     line-height: 1rem;
-    width: 54%;
+    width: 46%;
     border-bottom: 1px solid #d4d4d438;
     font-size: 1.5rem;
     padding-bottom: 3px;
     position: relative;
     text-shadow: 0px 0px;
     font-weight: normal;
-}
+}*//*
 .navigation .navbar-brand .name-logo{
 
 }
@@ -52,7 +62,7 @@ font-weight: normal;
 }
 .navigation .navbar-brand:hover{
     color: rgba(0, 0, 0, 0.6);
-}
+}*/
 .navigation .navbar-nav{
     padding-right: 0;
 }
@@ -65,7 +75,15 @@ font-weight: normal;
 .navigation .nav-item .nav-link:hover{
     color: rgba(199,199,199,.7);
 }
+.navigation .navbar-light .navbar-toggler{
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+}
+
 @media screen and (min-width: 992px){
+    .navigation{
+        position: static;
+    }
     .navigation .navbar{
         display: flex;
         flex-direction:row-reverse;
@@ -80,4 +98,24 @@ font-weight: normal;
         align-items: baseline;
         flex-wrap: nowrap;
     }
+}
+/*============================class for responsive==========================*/
+.fix-layout{
+    -ms-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+/*============================class for jquery==========================*/
+.style-navigation{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1030;
+    flex: 0 0 auto;
+    background-color:#5a524f;
+    padding: 0 0 15px;
+}
+.style-navbar{
+    align-self: center;
 }

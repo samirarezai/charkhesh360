@@ -2,4 +2,6 @@
 @import url("../font-english/font-english.css");
 @import url("rtl/public.css");
 @import url("rtl/navigation.css");
+@import url("rtl/include.css");
 @import url("rtl/inner.css");
+

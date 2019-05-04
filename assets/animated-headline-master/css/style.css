@@ -37,7 +37,7 @@ a {
 @media only screen and (min-width: 1170px) {
   .cd-title {
     height: 200px;
-    line-height: 300px;
+    line-height: 100px;
   }
   .cd-title h1 {
     font-size: 3rem;
@@ -55,12 +55,12 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .cd-intro {
-    margin: 5em auto;
+    margin: 1rem auto;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-intro {
-    margin: 6em auto;
+    margin: 0 auto;
   }
 }
 
@@ -92,7 +92,8 @@ a {
  right: 0;
   top: 0;
   color: #d72821;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
@@ -239,10 +240,10 @@ xclip
   /* line */
   content: '';
   position: absolute;
-  top: 24px;
+  top: 36px;
   left: 0;
   width: 2px;
-  height: 68%;
+  height: 55%;
   background-color: #aebcb9;
   text-align: right;
 }
@@ -253,6 +254,42 @@ xclip
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------*/
 
+@media only screen and (max-width: 1190px) {
+  .cd-headline.clip .cd-words-wrapper::after {
+    top: 25px;
+    height: 55%;
+  }
+}
 
+@media only screen and (max-width: 992px) {
+  .cd-intro{
+    margin: 1rem auto;
+  }
+  .cd-words-wrapper b {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cd-headline.clip .cd-words-wrapper::after {
+    top: 3px;
+    height: 86%;
+  }
+  .cd-intro{
+    margin: 1rem auto;
+  }
+  .cd-words-wrapper b {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cd-headline.clip .cd-words-wrapper::after {
+    top: 15px;
+    height: 58%;
+  }
+  .cd-intro{
+    margin: .8rem auto;
+  }
+
+}

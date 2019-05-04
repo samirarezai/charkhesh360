@@ -1,0 +1,88 @@
+.include{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin:9rem 0 ;
+    padding: 0 10px;
+}
+.include .title{
+    text-align: center;
+}
+.include .title .heading{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+}
+.include .title .caption{
+    width: auto;
+    font-size: .75rem;
+    color: #fff;
+    font-weight: normal;
+}
+.include .form{
+display: flex;
+    justify-content: center;
+    flex-direction: row;
+margin: 1rem 0;
+}
+.include .form input{
+    min-height: 50px;
+    min-width: 240px;
+    width: auto;
+    height: auto;
+    border-bottom-left-radius:0px ;
+    border-top-left-radius:0px ;
+    font-size: .9rem;
+}
+.include .form .btn-form{
+
+    min-width: 60px;
+    min-height: 50px;
+    width: auto;
+    height: auto;
+    color: #fff;
+    background-color: #d72821;
+    border: 1px solid #d72821;
+    border-bottom-right-radius:0px ;
+    border-top-right-radius:0px ;
+    font-size:1rem;
+}
+.include .btn:focus,.include .btn.focus ,.include .form input:focus,.include .form input:active{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+    border: 0;
+}
+@media screen and (min-width: 992px){
+    .include .title .heading{
+        font-size: 3.5rem;
+    }
+    .include .title .caption{
+        font-size: .9rem;
+    }
+    .include .form{
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+    }
+    .include .form input{
+        height: 4rem;
+        width: 30rem;
+        border-bottom-left-radius:0px ;
+        border-top-left-radius:0px ;
+        font-size: 1.3rem;
+    }
+    .include .form .btn-form{
+       height: 4rem;
+        width: 7rem;
+        color: #fff;
+        background-color: #d72821;
+        border: 1px solid #d72821;
+        border-bottom-right-radius:0px ;
+        border-top-right-radius:0px ;
+        font-size:1.7rem;
+    }
+}
