@@ -113,8 +113,9 @@ font-weight: normal;
     width: 100%;
     z-index: 1030;
     flex: 0 0 auto;
-    background-color:#5a524f;
+    background-color:#000;
     padding: 0 0 15px;
+    max-height: 60px;
 }
 .style-navbar{
     align-self: center;

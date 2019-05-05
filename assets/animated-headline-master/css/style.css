@@ -240,10 +240,10 @@ xclip
   /* line */
   content: '';
   position: absolute;
-  top: 36px;
+  top: 40px;
   left: 0;
   width: 2px;
-  height: 55%;
+  height: 50%;
   background-color: #aebcb9;
   text-align: right;
 }
