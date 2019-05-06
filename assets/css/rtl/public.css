@@ -30,11 +30,130 @@ header .layer {
     height: 100%;
 
 }
+header .arrow{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 50px;
+    right: 44%;
+}
+header .arrow:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #d72821;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 33%;
+    animation: ani-mouse 2.5s linear infinite;
+}
+
+@-webkit-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%; }
+    15% {
+        opacity: 1;
+        top: 60%; }
+    50% {
+        opacity: 0;
+        top: 60%; }
+    100% {
+        opacity: 0;
+        top: 29%; } }
+
+@-moz-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%; }
+    15% {
+        opacity: 1;
+        top: 60%; }
+    50% {
+        opacity: 0;
+        top: 60%; }
+    100% {
+        opacity: 0;
+        top: 29%; } }
+
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%; }
+    15% {
+        opacity: 1;
+        top: 60%; }
+    50% {
+        opacity: 0;
+        top: 60%; }
+    100% {
+        opacity: 0;
+        top: 29%; } }
+
+/*Arrow Scroll Down*/
+.arrow {
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    text-align: center;
+    color: #ef2994;
+    /*font-size: 13px;*/
+    z-index: 8;
+    display: block;
+    left: 0;
+    right: 0; }
+.arrow > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: #ffffff;
+    letter-spacing: 2px; }
+.arrow > *:hover, .arrow > *:focus, .arrow > *:active {
+    color: #ffffff; }
+.arrow .mouse {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 48px;
+    margin: 0 auto 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #555;
+    border: 2px solid #cccccc;
+    border-radius: 23px; }
+.arrow .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #ef2994;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite; }
 button:focus {
     outline: 0px dotted;
     outline: 0px auto -webkit-focus-ring-color;
 }
+@media screen and (max-width: 992px)and (min-width: 576px){
+    header .arrow{
+        right: 48%;
+    }
+}
 @media screen and (min-width: 992px){
+    header .arrow{
+
+        right: 49%;
+    }
     header{
         background: url(../../img/01617830_ShibuyaCrossingView_360VR8K_h265-1024x512.jpg) no-repeat bottom right;
         min-height: 100vh;
