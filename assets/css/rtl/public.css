@@ -30,6 +30,7 @@ header .layer {
     height: 100%;
 
 }
+/*===========================oval mark down========================*/
 header .arrow{
     width: 30px;
     height: 50px;
@@ -144,11 +145,54 @@ button:focus {
     outline: 0px dotted;
     outline: 0px auto -webkit-focus-ring-color;
 }
+/*===========================public title css========================*/
+.head{
+margin: 150px 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.head:before{
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #d72821;
+    position: absolute;
+    right: 50%;
+    bottom: 60px;
+    margin-right: -12px;
+    margin-top: 3px;
+}
+.head:after{
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #d72821;
+    display: block;
+    position: absolute;
+    right: 50%;
+    margin-right: -8px;
+    bottom:54px;
+    margin-top: 3px;
+}
+.head .title{
+     font-size: 1.4rem;
+     display: block;
+     line-height: 25px;
+     margin: 0;
+     color: #777;
+position: relative;
+ }
+
+/*=============================for responsive===========================*/
 @media screen and (max-width: 992px)and (min-width: 576px){
     header .arrow{
         right: 48%;
     }
 }
+
+
 @media screen and (min-width: 992px){
     header .arrow{
 
@@ -161,5 +205,10 @@ button:focus {
         position: relative;
         display: block;
 
+    }
+
+    .head .title{
+        line-height: 40px;
+        font-size: 2rem;
     }
 }
