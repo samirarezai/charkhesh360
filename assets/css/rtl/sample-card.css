@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 90px;
-    box-shadow: -4px 6px 18px 0px #b1b1b18a;
+    box-shadow: -3px 2px 12px 0px #b1b1b18a;
     padding: 20px 10px 10px;
     max-height: 455px;
 }
@@ -148,7 +148,7 @@ border: 0;
     }
     .sample-card .-card img{
         max-width: 360px;
-        max-height: 232px;
+        max-height: 220px;
         width: 100%;
         height: auto;
     }

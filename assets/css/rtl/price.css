@@ -1,0 +1,66 @@
+.price{
+
+}
+.card-pricing{
+    border: 1px solid #777;
+    text-align: center;
+}
+.price .card-pricing .heading{
+    font-size: 1.8rem;
+    padding: 1rem;
+    font-weight: bold;
+    color: #777;
+}
+.price .card-pricing .pack {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 10px;
+
+}
+.price .card-pricing .pack .number{
+    font-size: 3rem;
+    display: inline-block;
+    margin: 0;
+    padding-top: 6px;
+}
+.price .card-pricing .pack .unit{
+    font-size: .7rem;
+    display: inline-block;
+}
+.price .card-pricing .box{
+text-align: right;
+}
+.price .card-pricing .box .box-item{
+padding: 15px 50px;
+    font-size: .8rem;
+    position: relative;
+
+}
+.price .card-pricing .box .box-item:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #d72821;
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.price .card-pricing .box .box-item:after{
+content: '\f04b';
+color: #777;
+font-family: FontAwesome;
+position: absolute;
+top: 12px;
+right:13px;
+font-size: 1rem;
+}
