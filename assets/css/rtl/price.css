@@ -2,9 +2,17 @@
 
 }
 .card-pricing{
-    border: 1px solid #777;
+    border: 1px solid #eee;
     text-align: center;
+    border-radius: 8px;
+    font-size: .8rem;
+    color: #939598;
+    margin-bottom: 20px;
 }
+.card-pricing:hover{
+    border: 1px solid #939598;
+}
+
 .price .card-pricing .heading{
     font-size: 1.8rem;
     padding: 1rem;
@@ -14,16 +22,12 @@
 .price .card-pricing .pack {
     font-size: 2rem;
     font-weight: bold;
-    color: #fff;
-    background-color: #777;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #000;
+    background: #eee;
 padding: 10px;
-
 }
 .price .card-pricing .pack .number{
-    font-size: 3rem;
+    font-size: 2rem;
     display: inline-block;
     margin: 0;
     padding-top: 6px;
@@ -39,7 +43,7 @@ text-align: right;
 padding: 15px 50px;
     font-size: .8rem;
     position: relative;
-
+    color: #767676;
 }
 .price .card-pricing .box .box-item:before{
     content: '';
@@ -55,7 +59,16 @@ padding: 15px 50px;
     justify-content: space-around;
 
 }
-.price .card-pricing .box .box-item:after{
+.price .card-pricing .box{
+    padding: 10px 10px 0;
+}
+
+.price .card-pricing .box .box-item p{
+    margin: 0;
+    display: inline;
+    border-bottom: 1px dotted #b9b8b8;
+}
+.price .card-pricing .box .box-item:nth-child(1):after{
 content: '\f04b';
 color: #777;
 font-family: FontAwesome;
@@ -63,4 +76,94 @@ position: absolute;
 top: 12px;
 right:13px;
 font-size: 1rem;
+}
+.price .card-pricing .box .box-item:nth-child(2):after{
+    content: '\f0c0';
+    color: #777;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 12px;
+    right:13px;
+    font-size: 1rem;
+}
+.price .card-pricing .box .box-item:nth-child(3):after{
+    content: '\f279';
+    color: #777;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 12px;
+    right:13px;
+    font-size: 1rem;
+}
+.price .card-pricing .box .box-item:nth-child(4):after{
+    content: '\f041';
+    color: #777;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 12px;
+    right:13px;
+    font-size: 1rem;
+}
+.price .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #767676;
+}
+.price .content .fa{
+    font-size: 3rem;
+}
+.price .content .context{
+    margin: 20px 15px;
+    display: inline;
+    border-bottom: 1px dotted #b9b8b8;
+padding: 0;
+    font-size: .8rem;
+}
+.price .gloss{
+   margin: 20px 0;
+}
+.price .gloss1{
+    margin: 20px 0;
+    font-weight: bold;
+    color: #000;
+}
+.price .foot{
+    padding: 20px 0;
+    background: #eee;
+    font-size: 1.5rem;
+    color: #000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.price .foot p{
+   margin: 0;
+}
+/*==========================for suggest========================*/
+.price .card-pricing.suggest{
+    border: 1px solid #d72821;
+    color: #fff;
+}
+.price .card-pricing.suggest .pack{
+    background-color: #d72821;
+    color: #fff;
+}
+.price .card-pricing.suggest .foot{
+    background-color: #d72821;
+    color: #fff;
+}
+/*==========================hover of jquery========================*/
+.price .card-pricing,.price .card-pricing .pack,.price .card-pricing .foot{
+    transition: all .4s;
+}
+.price .card-pricing.style-hover-card-pricing{
+    border: 1px solid #939598;
+}
+.price .card-pricing.style-hover-card-pricing .pack{
+    background-color: #939598;
+    color: #fff;
+}
+.price .card-pricing.style-hover-card-pricing .foot{
+    background-color: #939598;
+    color: #fff;
 }

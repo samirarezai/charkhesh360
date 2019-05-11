@@ -52,12 +52,6 @@
     align-items: center;
     justify-content: center;
 }
-.sample-card .image{
-}/*
-.sample-card img:hover{
-    opacity: 0.8;
-    filter: grayscale(0%);
-}*/
 
 .sample-card .layer{
     position: absolute;
@@ -72,47 +66,7 @@
     opacity: .9;
 }
 
-/*.sample-card .-card a{
-    position: relative;
-    transition:all 0.4s;
-}
-.sample-card .-card a:after{
-    content: '';
-opacity: 0;
-    pointer:cursor;
-}
-.sample-card .-card  img:hover{
-   transition:all .4s;
-}
-.sample-card .-card img:hover{
-    opacity: 0.8;
-    filter: grayscale(30%);
-}
-.sample-card .-card a:hover{
-    transition:all .4s;
-}
-.sample-card .-card a:hover:after{
-    content: '\f04b';
-    font-family: FontAwesome;
-    color: #fff;
-    width: 70px;
-    height: 50px;
-    position: absolute;
-    top:50%;
-    right: 50%;
-    margin-top: -18px;
-    margin-right: -32px;
-    background-color: red;
-    border-radius: 48px / 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    opacity: .8;
-    filter: grayscale(0%);
-    z-index: 1020;
 
-}*/
 .sample-card .-card .heading:hover{
     color: #d72821;
 }
@@ -132,6 +86,7 @@ font-size: .9rem;
     color: #fff;
 border: 0;
     padding: 5px 20px;
+    height: 36px;
 }
 .sample-card .fa{
    padding: 0px 10px 0;
@@ -152,4 +107,27 @@ border: 0;
         width: 100%;
         height: auto;
     }
+}
+/*==========================hover of jquery========================*/
+.sample-card .image img ,.sample-card .layer{
+    transition: all .4s;
+}
+.sample-card .-card .image.style-hover-sample-card-image img{
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+}
+.sample-card .image.style-hover-sample-card-image .layer{
+                  display: flex;
+}
+.sample-card .-card .more:after{
+    content: '\f104';
+    font-family: FontAwesome;
+    opacity: 0;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    margin-right: 0;
+}
+.sample-card .-card .more.style-sample-card-more:after{
+  opacity: 1;
+    margin-right: 8px;
 }
