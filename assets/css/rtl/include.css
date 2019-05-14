@@ -3,7 +3,8 @@
     justify-content: center;
     text-align: center;
     align-self: center;
-    margin:9rem 0 ;
+    align-items: center;
+  margin:0 0 0 ;
     padding: 0 10px;
 }
 .include .title{
@@ -52,12 +53,18 @@ margin: 1rem 0;
     border-top-right-radius:0px ;
     font-size:1rem;
 }
+.include .form .btn-form:hover{
+    background-color:#e00900;
+}
 .include .btn:focus,.include .btn.focus ,.include .form input:focus,.include .form input:active{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
     border: 0;
 }
 @media screen and (min-width: 992px){
+    .include{
+margin:2rem 0 0;
+    }
     .include .title .heading{
         font-size: 3.5rem;
     }

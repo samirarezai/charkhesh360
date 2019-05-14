@@ -124,29 +124,25 @@
         left:6px;
         border-radius: 50%;
     }
+    /*============================class for jquery==========================*/
+    .navigation.style-navigation{
+        position:fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1030;
+        flex: 0 0 auto;
+        background-color:#000;
+        padding: 0 0 15px;
+        max-height: 60px;
+    }
+    .navigation.style-navigation .navbar-brand img{
+        max-width: 50px;
+    }
 }
 /*============================class for responsive==========================*/
 .fix-layout{
     -ms-flex: 1 0 auto;
     -webkit-flex: 1 0 auto;
     flex: 1 0 auto;
-}
-/*============================class for jquery==========================*/
-.style-navigation{
-    position:fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1030;
-    flex: 0 0 auto;
-    background-color:#000;
-    padding: 0 0 15px;
-    max-height: 60px;
-}
-
-.style-navbar{
-    align-self: center;
-}
-.style-navbar-brand{
-    max-width: 50px;
 }

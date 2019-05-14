@@ -15,12 +15,12 @@ $('.bars').click(function(){
 $(window).scroll(function(){
     var y = $(this).scrollTop();
     if( $(this).scrollTop() > 99 & $(window).width() > 992 ){
-        $('.navigation').fadeIn().addClass('style-navigation');
-        $('.navigation .navbar-brand img').css('max-width','50px');
+        $('.navigation').addClass('style-navigation');
+       /* $('.navigation .navbar-brand img').css('max-width','50px');*/
 
         } else if($(this).scrollTop() < 99 & $(window).width() > 992){
         $('.navigation').removeClass('style-navigation');
-        $('.navigation .navbar-brand img').css('max-width','90px');
+     /*   $('.navigation .navbar-brand img').css('max-width','90px');*/
 
         }
 });
