@@ -34,22 +34,25 @@ header .layer {
 header .arrow{
     width: 30px;
     height: 50px;
-    border: 2px solid #fff;
-    border-radius: 15px;
+    border: 0px solid #fff;
+border-bottom-left-radius:50% ;
+    border-bottom-right-radius:50%;
     position: absolute;
     bottom: 50px;
     right: 44%;
 }
 header .arrow:before{
-    content: '';
+    content: '\f103';
     width: 8px;
     height: 8px;
-    background-color: #d72821;
+  font-family: FontAwesome;
     border-radius: 50%;
     position: absolute;
     top: 0px;
     right: 33%;
     animation: ani-mouse 2.5s linear infinite;
+    font-size: 2rem;
+    color: #d72821;
 }
 
 @-webkit-keyframes ani-mouse {
@@ -100,7 +103,7 @@ header .arrow:before{
     bottom: 3vh;
     width: 100%;
     text-align: center;
-    color: #ef2994;
+    color:#d72821;
     /*font-size: 13px;*/
     z-index: 8;
     display: block;
@@ -136,7 +139,7 @@ header .arrow:before{
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
-    background: #ef2994;
+    background: #d72821;
     border-radius: 50%;
     -webkit-animation: ani-mouse 2.5s linear infinite;
     -moz-animation: ani-mouse 2.5s linear infinite;

@@ -64,13 +64,6 @@ $('.stop').on('click',function(){
     }
     );
 //============================hover sample card button==========================//
-    /*$(".sample-card .more").hover(function () {
-            $(this).find('i').addClass('fa fa-angle-left').hide().show({ direction: "right" }, 100);
-        },
-        function () {
-            $(this).find('i').removeClass('fa fa-angle-left').hide({ direction: "right" }, 100);
-        }
-    );*/
     $(".sample-card .more").hover(function () {
             $(this).addClass("style-sample-card-more");
         },
@@ -88,23 +81,22 @@ $('.stop').on('click',function(){
     );
 //============================hover sample card image==========================//
 
-/*$(".sample-card .image").hover(function () {
-    $(this).find('.layer').fadeIn().css('display','flex');
-        $(this).find('img').fadeIn().css('opacity', '.7');
-},
-    function () {
-        $(this).find('.layer').fadeOut('fast').css('display','none');
-        $(this).find('img').fadeIn().css('opacity','1')
-    }
-);*/
-
-    $(".sample-card").hover(function () {
+    $(".sample-card .image").hover(function () {
             $(this).addClass("style-hover-sample-card-image");
         },
         function () {
             $(this).removeClass("style-hover-sample-card-image");
         }
         );
+    //============================hover link of footer or social media ==========================//
+
+    $(".social-media-item").hover(function () {
+            $(this).addClass("style-hover-social-media-item");
+        },
+        function () {
+            $(this).removeClass("style-hover-social-media-item");
+        }
+    );
 
     //============================the end==========================//
 });

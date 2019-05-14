@@ -55,7 +55,7 @@
 
 .sample-card .layer{
     position: absolute;
-    display: none;
+    opacity: 0;
 }
 .sample-card .layer a{
    background-color:#d72821;
@@ -113,11 +113,12 @@ border: 0;
     transition: all .4s;
 }
 .sample-card .-card .image.style-hover-sample-card-image img{
-    -webkit-filter: sepia(100%);
-    filter: sepia(100%);
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    opacity: .8;
 }
 .sample-card .image.style-hover-sample-card-image .layer{
-                  display: flex;
+opacity: 1;
 }
 .sample-card .-card .more:after{
     content: '\f104';
