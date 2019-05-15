@@ -3,8 +3,7 @@
     justify-content: center;
     text-align: center;
     align-self: center;
-    align-items: center;
-  margin:0 0 0 ;
+    margin:9rem 0 ;
     padding: 0 10px;
 }
 .include .title{
@@ -53,73 +52,12 @@ margin: 1rem 0;
     border-top-right-radius:0px ;
     font-size:1rem;
 }
-.include .form .btn-form:hover{
-    background-color:#e00900;
-}
 .include .btn:focus,.include .btn.focus ,.include .form input:focus,.include .form input:active{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
     border: 0;
 }
-/*modal*/
-.include .modal{
-    text-align: right;
-
-}
-.include .modal .modal-content{
-
-}
-.include .modal .modal-item{
-    margin: 18px 20px;
-}
-.include .modal .modal-item a{
-    text-decoration: none;
-    line-height: .8rem;
-}
-.include .modal .modal--header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 0px solid #dadada;
-    position: relative;
-    overflow: hidden;
-
-}
-.include .modal .modal--header:after{
-   content: '';
-    width: 300px;
-    height:90px;
-    background-color: #e41f1f2b;
-    position: absolute;
-    top: -21px;
-    right: -7px;
-    border-radius: 30% 70% 46% 54% / 45% 31% 69% 55%  ;
-    overflow: hidden;
-
-}
-.include .modal .modal-title{
-    color: #000;
-    padding-right: 50px;
-    z-index: 1;
-   font-size: 1.5rem;
-}
-.include .modal .close{
-    align-self: flex-start;
-    display: block;
-    float: left;
-    font-size: 2rem;
-}
-.include .modal .exp{
-    margin: 0;
-    font-size: .8rem;
-    color: #777;
-}
-/*responsive*/
 @media screen and (min-width: 992px){
-    .include{
-margin:2rem 0 0;
-    }
     .include .title .heading{
         font-size: 3.5rem;
     }
@@ -147,10 +85,5 @@ margin:2rem 0 0;
         border-bottom-right-radius:0px ;
         border-top-right-radius:0px ;
         font-size:1.7rem;
-
-    }
-    .modal-dialog {
-        max-width: 900px;
-        margin: 2.75rem auto;
     }
 }

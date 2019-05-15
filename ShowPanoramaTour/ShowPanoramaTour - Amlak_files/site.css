@@ -168,18 +168,18 @@ line-height: 1.8rem;
 }
 .tour .more{
     text-align: center;
-    width: 100%;
+    border: 2px solid red;
+    border-radius: 8px;
 }
 .tour .more a{
     color: #000;
     text-decoration: none;
-    border: 2px solid red;
-    border-radius: 8px;
-    padding:0 58px ;
-    font-size: .9rem;
-    transition:all .3s;
 }
-.tour .more a:hover{
+.tour .more.style-tour-more{
+    color: #fff;
+    background-color: red;
+}
+.tour .more.style-tour-more a{
     color: #fff;
     background-color: red;
 }

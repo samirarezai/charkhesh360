@@ -14,13 +14,13 @@ $('.bars').click(function(){
 //=======================scroll navbar===================//
 $(window).scroll(function(){
     var y = $(this).scrollTop();
-    if( $(this).scrollTop() > 99){
-        $('.navigation').addClass('style-navigation');
-       /* $('.navigation .navbar-brand img').css('max-width','50px');*/
+    if( $(this).scrollTop() > 99 & $(window).width() > 992 ){
+        $('.navigation').fadeIn().addClass('style-navigation');
+        $('.navigation .navbar-brand img').css('max-width','50px');
 
-        } else if($(this).scrollTop() < 99 ){
+        } else if($(this).scrollTop() < 99 & $(window).width() > 992){
         $('.navigation').removeClass('style-navigation');
-     /*   $('.navigation .navbar-brand img').css('max-width','90px');*/
+        $('.navigation .navbar-brand img').css('max-width','90px');
 
         }
 });
@@ -50,7 +50,7 @@ owl.owlCarousel({
     }
 });
 $('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[900])
+    owl.trigger('play.owl.autoplay',[1000])
 })
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
@@ -89,37 +89,14 @@ $('.stop').on('click',function(){
         }
         );
     //============================hover link of footer or social media ==========================//
-    /*twitter*/
-    $(".social-media-item.twitter").hover(function () {
-            $(".footer-social-media").addClass("style-hover-social-media-twitter style-hover-social-media");
+
+    $(".social-media-item").hover(function () {
+            $(this).addClass("style-hover-social-media-item");
         },
         function () {
-            $(".footer-social-media").removeClass("style-hover-social-media-twitter style-hover-social-media");
+            $(this).removeClass("style-hover-social-media-item");
         }
     );
-    /*facebook*/
-    $(".social-media-item.facebook").hover(function () {
-            $(".footer-social-media").addClass("style-hover-social-media-facebook style-hover-social-media");
-        },
-        function () {
-            $(".footer-social-media").removeClass("style-hover-social-media-facebook style-hover-social-media");
-        }
-    );
-    /*instagram*/
-    $(".social-media-item.instagram").hover(function () {
-            $(".footer-social-media").addClass("style-hover-social-media-instagram style-hover-social-media");
-        },
-        function () {
-            $(".footer-social-media").removeClass("style-hover-social-media-instagram style-hover-social-media");
-        }
-    );
-    /*telegram*/
-    $(".social-media-item.telegram").hover(function () {
-            $(".footer-social-media").addClass("style-hover-social-media-telegram style-hover-social-media");
-        },
-        function () {
-            $(".footer-social-media").removeClass("style-hover-social-media-telegram style-hover-social-media");
-        }
-    );
+
     //============================the end==========================//
 });
