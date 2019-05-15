@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 <header>
+
+    <video autoplay loop muted playsinline id="background-video">
+
+        <source src="assets/img/background.mp4" type="video/mp4"></video>
     <span class="layer"></span>
     <span class="arrow"></span>
     <!--==========================navbar=========================-->
@@ -76,15 +81,57 @@
                     </div>
                     <form class="form-inline form">
                         <input class="form-control mr-sm-2" type="search" placeholder="جستجو..." aria-label="Search">
-                        <button class="btn btn-form my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
+                        <button type="button" class="btn btn-form my-2 my-sm-0" data-toggle="modal" data-target="#myModal" ><i class="fa fa-search"></i></button>
 
-            </div>
+                   </form>
+                    <div class="modal fade" id="myModal">
+
+
+
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal--header">
+                                    <h4 class="modal-title">نتایج جستجو</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                 <div class="modal-list">
+                                     <div class="modal-item">
+                                         <a href="#">مجموعه تورهای مجازی هتل پاسارگاد</a>
+                                     <p class="exp">مجموعه تورهای مجازی هتل پاسارگاد با ارائه بهترین امکانات و داشتن معماری عالی...</p>
+                                     </div>
+                                     <div class="modal-item"><a href="#">مجموعه تورهای مجازی هتل دنیز</a>
+                                         <p class="exp">مجموعه تورهای مجازی هتل دنیز با ارائه بهترین امکانات و داشتن معماری عالی ...</p>
+                                     </div>
+                                     <div class="modal-item"><a href="#">کافه ملون</a>
+                                         <p class="exp">کافه ملون دارای ارامشی بی نظیر با معماری فوق العاده و چشمگیر واقع در میدان ونک خ ملاصدرا اماده پذیرایی از مهمانان شما و سایر مهمان ها می باشد ...</p>
+                                     </div>
+                                     <div class="modal-item"><a href="#"> تور مجازی تالار نقره</a>
+                                         <p class="exp">تالار نقره با دیزاین فوق العاده وطراحی منحصر بفرد  ...</p>
+                                     </div>
+                                 </div>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <!--div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div-->
+
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </div>
 </header>
+
+
 <main>
+
     <!--==========================card for sample=========================-->
     <section class="sample-card">
         <div class="container">
@@ -406,12 +453,6 @@
                         <div class="relaitional-item"><p><i class="fa fa-envelope"></i>info@charkhesh360.com</p></div>
                         <div class="relaitional-item"><p><i class="fa fa-phone-square"></i>021-51238</p></div>
                         <div class="relaitional-item">
-                            <div class="social-media">
-                                <div class="social-media-item"><a href="#" style="color: #38A1F3;"><i class="fa fa-twitter"></i></a></div>
-                                <div class="social-media-item"><a href="#" style="color: #0088cc;"><i class="fa fa-telegram"></i></a></div>
-                                <div class="social-media-item"><a href="#" style="color: #cd486b;"><i class="fa fa-instagram"></i></a></div>
-                                <div class="social-media-item"><a href="#" style="color: #3b5998;"><i class="fa fa-facebook"></i></a></div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -420,14 +461,29 @@
 
         </div>
     </section>
+    <!--==========================social media link=========================-->
+    <section class="footer-social-media">
+        <div class="social-media">
+            <div class="social-media-item twitter"><a href="#"><i class="fa fa-twitter"></i></a></div>
+            <div class="social-media-item instagram"><a href="#"><i class="fa fa-instagram"></i></a></div>
+            <div class="social-media-item facebook"><a href="#"><i class="fa fa-facebook"></i></a></div>
+            <div class="social-media-item telegram"><a href="#"><i class="fa fa-telegram"></i></a></div>
+        </div>
+        <p class="copyright">Copyright © 2019 charkhesh360 - All Rights Reserved </p>
+    </section>
+    <!--==========================request or button to connect=========================-->
 
 </footer>
+<section class="request">
+        <button class="connect">salam</button>
+</section>
 <script src="assets/js/jquery-3.4.0.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/animated-headline-master/js/modernizr.js"></script>
 <script src="assets/animated-headline-master/js/main.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
+
 <script src="assets/js/javascript.js"></script>
 </body>
 </html>
