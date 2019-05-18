@@ -84,7 +84,7 @@
         flex-wrap: nowrap;
     }
     .navigation .navbar-brand img{
-        max-width:90px;
+        max-width:120px;
     }
     .navigation .navbar-collapse {
         background-color: transparent;
