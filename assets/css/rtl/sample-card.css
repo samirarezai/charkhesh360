@@ -52,7 +52,12 @@
     align-items: center;
     justify-content: center;
 }
-
+.sample-card .image img{
+    max-width: 360px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+}
 .sample-card .layer{
     position: absolute;
     opacity: 0;
