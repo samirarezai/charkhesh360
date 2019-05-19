@@ -1,0 +1,139 @@
+.sample-card{
+
+}
+.sample-card .-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 90px;
+    box-shadow: -3px 2px 12px 0px #b1b1b18a;
+    padding: 20px 10px 10px;
+    max-height: 455px;
+}
+
+.sample-card .-card .heading{
+    font-size: 1.3rem;
+    color: #000;
+    transition: all .3s;
+    position: relative;
+    right: 30px;
+    padding:0 10px 10px 0;
+    display: flex;
+    align-items: baseline;
+}
+.sample-card .-card .heading:before {
+   content: '';
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #d72821;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+
+}
+.sample-card .-card .heading:after{
+    content: '\f04b';
+    color: #777;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5px;
+    right: -23px;
+    font-size: 1rem;
+}
+.sample-card .image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sample-card .image img{
+    max-width: 360px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+}
+.sample-card .layer{
+    position: absolute;
+    opacity: 0;
+}
+.sample-card .layer a{
+   background-color:#d72821;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: .9;
+}
+
+
+.sample-card .-card .heading:hover{
+    color: #d72821;
+}
+.sample-card .-card .text{
+    text-align: center;
+    padding: 10px 0;
+}
+.sample-card .-card .explain{
+font-size: .9rem;
+    color: #777;
+
+}
+.sample-card .-card .more{
+    font-size: 1.1rem;
+    border-radius: 25px;
+    background: #d72821;
+    color: #fff;
+border: 0;
+    padding: 5px 20px;
+    height: 36px;
+}
+.sample-card .fa{
+   padding: 0px 10px 0;
+
+}
+@media screen and (min-width: 992px){
+    .sample-card .-card{
+      max-width: 360px;
+    }
+    .sample-card .-card .explain{
+        font-size: 1rem;
+
+        text-align: right;
+    }
+    .sample-card .-card img{
+        max-width: 360px;
+        max-height: 220px;
+        width: 100%;
+        height: auto;
+    }
+}
+/*==========================hover of jquery========================*/
+.sample-card .image img ,.sample-card .layer{
+    transition: all .4s;
+}
+.sample-card .-card .image.style-hover-sample-card-image img{
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    opacity: .8;
+}
+.sample-card .image.style-hover-sample-card-image .layer{
+opacity: 1;
+}
+.sample-card .-card .more:after{
+    content: '\f104';
+    font-family: FontAwesome;
+    opacity: 0;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    margin-right: 0;
+}
+.sample-card .-card .more.style-sample-card-more:after{
+  opacity: 1;
+    margin-right: 8px;
+}
