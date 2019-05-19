@@ -7,7 +7,7 @@ position: fixed;
 }
 .request .connect{
     background-color: transparent;
-    color: red;
+    color:#d72821;
     border: 0;
     position: relative;
 }
@@ -16,7 +16,7 @@ position: fixed;
     width: 60px;
     height:60px;
     border-radius: 34px 8px 34px 34px;
-    background-color:red;
+    background-color:#d72821;
     position: absolute;
     top: -20px;
     right: 0px;
@@ -31,8 +31,8 @@ position: fixed;
 .request .form-connect{
     background-color: #fff;
     position: fixed;
-    bottom: 19px;
-    right: 19px;
+    bottom: 10px;
+    right: 10px;
 margin: 0px;
     transition: all 2s;
     border-radius: 8px;
@@ -43,7 +43,7 @@ margin: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: #d72821;
     padding:10px 20px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -82,8 +82,8 @@ padding: 20px;
 }
 .request .form-btn-submit{
     color: #fff;
-    background-color: red;
+    background-color:#d72821;
     border-radius: 8px;
-    border:3px solid red;
+    border:3px solid #d72821;
     width: 100%;
 }
