@@ -1,0 +1,42 @@
+.preamble{
+    margin-bottom: 100px;
+}
+.preamble .message{
+    font-size: .95rem;
+    line-height: 1.7rem;
+    color: #403636;
+}
+.preamble .heading {
+    font-size: .95rem;
+    line-height: 7px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ff7149;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+.preamble .property {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.preamble .property .case {
+    font-size: .8rem;
+    color: #353535;
+    line-height: 1.9rem;
+    position: relative;
+    padding-right: 16px;
+}
+.preamble .property .case p {
+    margin: 0;
+}
+.preamble .property .case:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #d72821 ;
+}

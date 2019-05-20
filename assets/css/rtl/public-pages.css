@@ -1,0 +1,175 @@
+/*======================header public=====================*/
+body {
+    font-family: Shabnam, Tahoma;
+    text-align: right;
+    position: relative;
+}
+header {
+   background: url(../../img/01617830_ShibuyaCrossingView_360VR8K_h265-1024x512.jpg) no-repeat bottom right;
+    background-color: #000;
+    min-height: 75px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header #background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header .layer {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(59, 42, 76, 0.86);
+    background: rgba(47, 40, 40, 0.72);
+    width: 100%;
+    height: 100%;
+
+}
+
+header .layer video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*===========================public title css========================*/
+.head {
+    margin: 150px 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.head:before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: #d72821;
+    position: absolute;
+    right: 50%;
+    bottom: 60px;
+    margin-right: -12px;
+    margin-top: 3px;
+}
+
+.head:after {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: #d72821;
+    display: block;
+    position: absolute;
+    right: 50%;
+    margin-right: -8px;
+    bottom: 54px;
+    margin-top: 3px;
+}
+
+.head .title {
+    font-size: 2rem;
+    display: block;
+    line-height: 40px;
+    margin: 0;
+    color: #777;
+    position: relative;
+}
+/*=======================theme for background main=======================*/
+.main-about{
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.ripple1-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background: #eab7b7;
+    animation: ripple 25s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+}
+
+.medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+}
+
+.large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+
+.xlarge{
+    width: 800px;
+    height: 800px;
+    left: -400px;
+    bottom: -400px;
+}
+
+.xxlarge{
+    width: 1000px;
+    height: 1000px;
+    left: -500px;
+    bottom: -500px;
+}
+
+.shade1{
+    opacity: 0.2;
+}
+.shade2{
+    opacity: 0.4;
+}
+
+.shade3{
+    opacity: 0.55;
+}
+
+.shade4{
+    opacity: .65;
+}
+
+.shade5{
+    opacity: 0.9;
+}
+
+@keyframes ripple{
+    0%{
+        transform: scale(0.8);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(0.8);
+    }
+}
