@@ -40,3 +40,8 @@
     right: 0px;
     color: #d72821 ;
 }
+.preamble img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
