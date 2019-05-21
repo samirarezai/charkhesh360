@@ -7,7 +7,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../img/image-for-overlay.jpg);
+    background-image: url(../../img/background-overlay.jpg);
 }
 .overlay .covering{
     position: relative;

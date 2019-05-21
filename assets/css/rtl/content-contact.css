@@ -1,0 +1,127 @@
+.connection{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*========================form=================*/
+.connection .form{
+    background: #fff url("../../img/red-black-and-white-wallpaper-designs-red-black-and-white-wallpaper-designs6.jpg")no-repeat center center;
+    background-size: cover;
+    padding: 20px 70px;
+    text-align: center;
+border-radius:0;
+}
+.connection .form .teeny{
+    font-size: .7rem;
+    color: #fff;
+}
+.connection .form .title{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.connection .form .form-group-inline{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.connection .form input,.conection .form textarea{
+    border: 0;
+    border-radius: 3px;
+}
+.connection .form .form-control:focus{
+    outline:2px solid #d72821;
+    border: 0;
+    box-shadow: 0 0 0 0 #fff;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.connection .form .btn{
+    background-color:#d72821;
+    color: #fff;
+    font-size: .8rem;
+    padding: 10px 20px;
+}
+.connection .navigation .nav-item .activation {
+    right: 33px;
+}
+.connection .form .form-control {
+    border: 0;
+}
+/*========================form=================*/
+.connection .require{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.connection .require .skill{
+    font-size: .9rem;
+    line-height: 1rem;
+    margin-top:15px ;
+    margin-bottom: 5px;
+}
+.connection .require .property{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.connection .require .property .case p{
+    margin: 0;
+}
+.connection .require .property .case{
+    font-size: .8rem;
+    color:#353535 ;
+    line-height: 1.9rem;
+    position: relative;
+    padding-right: 15px;
+}
+.connection .require .property .case:before{
+    content: '\f00c';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #d72821 ;
+}
+/*===========================intro=======================*/
+.connection .intro{
+
+}
+.connection .intro .teeny{
+    font-size: .7rem;
+    color: #636363;
+}
+.connection .intro .title{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #171515;
+}
+.connection .intro .caption{
+    font-size: .8rem;
+    line-height: 1.6rem;
+    color: #353131;
+    margin: 0;
+}
+/*===========================responsive=======================*/
+@media  screen and (min-width: 768px){
+    .connection .form .form-group-inline{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .connection .form .form-group-inline .form-group{
+        flex-basis:500px;
+    }
+    .connection .form{
+
+        border-radius: 56% 44% 66% 34% / 30% 51% 49% 70%  ;
+    }
+}
+@media  screen and (max-width: 1010px){
+    .connection .form{
+        padding: 20px 15px;
+    }
+}

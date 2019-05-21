@@ -27,11 +27,12 @@
     border: 0;
     outline: 0;
 }
+
 .navigation .navbar-brand{
     padding-bottom: 0;
 }
 .navigation .navbar-brand img{
-    max-width:50px;
+    max-width:85px;
     width: 100%;
     height: auto;
 
@@ -86,7 +87,7 @@
         flex-wrap: nowrap;
     }
     .navigation .navbar-brand img{
-        max-width:90px;
+        max-width:145px;
     }
     .navigation .navbar-collapse {
         background-color: transparent;
@@ -140,7 +141,7 @@
         transition: all .4s;
     }
     .navigation.style-navigation .navbar-brand img{
-        max-width: 50px;
+        max-width: 85px;
     }
 }
 /*============================class for responsive==========================*/
