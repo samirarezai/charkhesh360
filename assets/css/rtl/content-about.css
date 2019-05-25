@@ -2,12 +2,12 @@
     margin-bottom: 100px;
 }
 .preamble .message{
-    font-size: .95rem;
+    font-size: 1rem;
     line-height: 1.7rem;
     color: #403636;
 }
 .preamble .heading {
-    font-size: .95rem;
+    font-size: 1rem;
     line-height: 7px;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -23,7 +23,7 @@
     flex-direction: column;
 }
 .preamble .property .case {
-    font-size: .8rem;
+    font-size: .95rem;
     color: #353535;
     line-height: 1.9rem;
     position: relative;

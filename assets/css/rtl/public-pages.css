@@ -1,6 +1,6 @@
 /*======================header public=====================*/
 body {
-    font-family: Shabnam, Tahoma;
+    font-family:IRANSans,Shabnam, Tahoma;
     text-align: right;
     position: relative;
 }
@@ -82,8 +82,9 @@ header .layer video {
     display: block;
     line-height: 40px;
     margin: 0;
-    color: #777;
+    color:#464444;
     position: relative;
+    font-weight: bold;
 }
 /*=======================theme for background main=======================*/
 .main-about{

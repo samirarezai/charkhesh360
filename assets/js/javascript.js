@@ -125,9 +125,17 @@ $('.stop').on('click',function(){
 
 //============================pop up fixed bottom==========================//
     $(".request .connect").click(function () {
-            $(".request .form-connect").fadeIn('slow').show();
+            $(this).next(".form-connect").fadeIn(300);
+
+
         });
-    $(".request .form-close").click(function () {
-        $(".request .form-connect").fadeOut('slow').hide();});
+    $(".form-connect").find(".form-close").click(function () {
+        $(".form-connect").fadeOut(300);
+    });
+/*
+    $( "#box-1" ).effect( "shake", {
+        times: 10,
+        distance: 150
+    }, 3000);*/
     //============================the end==========================//
 });
