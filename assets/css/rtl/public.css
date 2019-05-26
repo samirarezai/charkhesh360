@@ -1,6 +1,5 @@
 * {
 }
-
 body {
     font-family:IRANSans,Shabnam, Tahoma;
     text-align: right;
@@ -232,6 +231,8 @@ button:focus {
     margin: 0;
     color: #777;
     position: relative;
+    font-family:Shabnam,IRANSans, Tahoma;
+    font-weight: bold;
 }
 
 /*=============================for responsive===========================*/

@@ -14,10 +14,11 @@
 }
 
 .price .card-pricing .heading{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 1rem;
     font-weight: bold;
     color: #777;
+    font-family: Shabnam;
 }
 .price .card-pricing .pack {
     font-size: 2rem;
@@ -27,10 +28,11 @@
 padding: 10px;
 }
 .price .card-pricing .pack .number{
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: inline-block;
     margin: 0;
     padding-top: 6px;
+    font-family: IRANSans;
 }
 .price .card-pricing .pack .unit{
     font-size: .7rem;
