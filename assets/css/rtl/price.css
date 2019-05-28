@@ -8,6 +8,8 @@
     font-size: .8rem;
     color: #939598;
     margin-bottom: 20px;
+    background-color: #fff;
+    
 }
 .card-pricing:hover{
     border: 1px solid #939598;
@@ -134,10 +136,12 @@ padding: 0;
 .price .foot{
     padding: 20px 0;
     background: #eee;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #000;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    font-family: Shabnam;
+    font-weight: bold;
 }
 .price .foot p{
    margin: 0;

@@ -7,25 +7,41 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin:40px;
-    box-shadow: -6px 6px 20px 7px #cecdcd8c;;
-    max-width: 390px;
-    min-height: 300px;
+    margin:20px;
+    box-shadow: -1px 2px 16px 7px #cecdcd8c;
+    max-width: 100%;
+    min-height:270px;
+    overflow: hidden;
+    background-color: #fff;
 }
+.owl-pics .item .image{
+    width: 100% ;
+    height: 100%;
+    max-width: 470px;
+  min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
 
+}
+.owl-pics .item img{
+width: auto;
+    height: 100%;
+ max-height: 220px;
+}
 .owl-pics .intro{
     align-self: self-start;
-
 }
 .owl-pics .item .more{
     margin: 10px 0;
     padding: 3px 10px;
-    font-size: 1.3rem;
-    background-color: #0000005e;
+    font-size: 1rem;
+    background-color: #d72821;
     color: #ffffff;
 border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
-
+min-width: 100px;
 }
 .owl-nav{
     display: flex;
@@ -62,4 +78,12 @@ color: #a7a7a7e6;
         margin:20px 10px;
 
     }
+}
+/*==========================css for jquery=========================*/
+.owl-pics .item .more,.owl-pics .item{
+    transition: min-width .4s , background-color 1s;
+}
+.owl-pics .item.style-more .more{
+min-width: 500px;
+background-color: #000;
 }

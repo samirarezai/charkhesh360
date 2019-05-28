@@ -50,7 +50,7 @@
     transition: all .3s;
 }
 .navigation .nav-item .nav-link:hover{
-    color: rgba(199,199,199,.7);
+    color:#d72821;
 }
 .navigation .navbar-light .navbar-toggler{
     color: #fff;

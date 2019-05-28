@@ -189,7 +189,10 @@ button:focus {
     outline: 0px dotted;
     outline: 0px auto -webkit-focus-ring-color;
 }
-
+/*===========================main========================*/
+main{
+    background: url("../../img/bg-transparent.png")no-repeat -620px 70%;
+}
 /*===========================public title css========================*/
 .head {
     margin: 150px 0 70px;
@@ -259,4 +262,5 @@ button:focus {
         line-height: 40px;
         font-size: 2rem;
     }
+
 }

@@ -57,10 +57,10 @@ $('.stop').on('click',function(){
 })
 //============================hover owl pics==========================//
     $(".owl-pics .item").hover(function () {
-       $(this).find(".customer").css("transform","scale(1.04,1.04)");
+       $(this).addClass("style-more");
     },
         function () {
-            $(this).find(".customer").css("transform","scale(1,1)");
+            $(this).removeClass("style-more");
     }
     );
 //============================hover sample card button==========================//
@@ -90,11 +90,11 @@ $('.stop').on('click',function(){
         );
     //============================hover link of footer or social media ==========================//
     /*twitter*/
-    $(".social-media-item.twitter").hover(function () {
-            $(".footer-social-media").addClass("style-hover-social-media-twitter style-hover-social-media");
+    $(".social-media-item.youtube").hover(function () {
+            $(".footer-social-media").addClass("style-hover-social-media-youtube style-hover-social-media");
         },
         function () {
-            $(".footer-social-media").removeClass("style-hover-social-media-twitter style-hover-social-media");
+            $(".footer-social-media").removeClass("style-hover-social-media-youtube style-hover-social-media");
         }
     );
     /*facebook*/

@@ -49,6 +49,7 @@
     font-size: .8rem;
     color: #777777b0;
 }
+
 /*========================hover social media=====================*/
 .footer-social-media.style-hover-social-media .social-media-item{
     background-color: #fff;
@@ -56,12 +57,12 @@
 .footer-social-media.style-hover-social-media .copyright{
     color: #fff;
 }
-/*twitter*/
-.footer-social-media.style-hover-social-media-twitter{
-    background-color: #38A1F3;
+/*youtube*/
+.footer-social-media.style-hover-social-media-youtube{
+    background-color: #ff0000;
 }
-.footer-social-media.style-hover-social-media-twitter .social-media-item a{
-    color: #38A1F3;
+.footer-social-media.style-hover-social-media-youtube .social-media-item a{
+    color: #ff0000;
 }
 /*facebook*/
 .footer-social-media.style-hover-social-media-facebook{

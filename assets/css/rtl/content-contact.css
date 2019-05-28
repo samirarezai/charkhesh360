@@ -20,6 +20,7 @@ border-radius:0;
     line-height: 2rem;
     padding-bottom: 10px;
     color: #fff;
+    font-family: Shabnam;
 }
 .connection .form .form-group-inline{
     display: flex;
@@ -99,6 +100,7 @@ border-radius:0;
     font-size: 1.3rem;
     line-height: 2rem;
     color: #171515;
+    font-family: Shabnam;
 }
 .connection .intro .caption{
     font-size: .95rem;

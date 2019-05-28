@@ -1,5 +1,5 @@
 .sample-card{
-
+    background: url("../../img/bg-transparent.png")no-repeat 400px center;
 }
 .sample-card .-card{
     display: flex;
@@ -9,17 +9,20 @@
     box-shadow: -3px 2px 12px 0px #b1b1b18a;
     padding: 20px 10px 10px;
     max-height: 455px;
+    background-color: #fff;
 }
 
 .sample-card .-card .heading{
     font-size: 1.3rem;
-    color: #000;
+    color: #423d3d;
     transition: all .3s;
     position: relative;
     right: 30px;
     padding:0 10px 10px 0;
     display: flex;
     align-items: baseline;
+    font-family: Shabnam;
+    font-weight: bold;
 }
 .sample-card .-card .heading:before {
    content: '';
@@ -92,6 +95,7 @@ font-size: .9rem;
 border: 0;
     padding: 5px 20px;
     height: 36px;
+    font-family: Shabnam;
 }
 .sample-card .fa{
    padding: 0px 10px 0;
@@ -111,6 +115,9 @@ border: 0;
         max-height: 220px;
         width: 100%;
         height: auto;
+    }
+    .sample-card{
+        background: url("../../img/bg-transparent.png")no-repeat 820px center;
     }
 }
 /*==========================hover of jquery========================*/
@@ -132,8 +139,14 @@ opacity: 1;
     -webkit-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
     margin-right: 0;
+
 }
 .sample-card .-card .more.style-sample-card-more:after{
   opacity: 1;
     margin-right: 8px;
+}
+@media screen and (min-width: 1110px){
+    .sample-card{
+        background: url("../../img/bg-transparent.png")no-repeat 1000px center;
+    }
 }

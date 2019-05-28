@@ -123,6 +123,7 @@ margin:2rem 0 0;
     }
     .include .title .heading{
         font-size: 3.5rem;
+        font-weight: bold;
     }
     .include .title .caption{
         font-size: .9rem;
