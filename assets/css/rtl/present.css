@@ -1,0 +1,64 @@
+.present{
+   background-color: #16263e;
+    font-family: Shabnam;
+}
+.present .profile-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.present .profile-logo{
+width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+}
+.present .profile-logo img{
+    width: auto;
+    height:100%;
+    min-width: 160px;
+}
+.present .profile-heading{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color:#fff;
+    font-weight: bold;
+}
+.present .profile-more{
+    padding:20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.present a{
+    text-decoration: none;
+}
+
+.present .profile-more i{
+    padding-left: 5px;
+}
+.present .profile-caption{
+   font-family: IRANSans;
+    color:#c5bbbb;
+    font-size: .9rem;
+    line-height: 1.7rem;
+    text-align: center;
+}
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+@media screen and (min-width: 768px){
+    .present .profile-heading{
+        font-size: 2rem;
+    }
+    .present .profile-caption{
+        font-size: .95rem;
+        line-height: 1.7rem;
+    }
+}
