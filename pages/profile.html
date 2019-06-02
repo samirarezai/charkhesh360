@@ -39,60 +39,66 @@
         <div class="container-fluid p-0">
             <div class="prof-row p-0">
                 <div class="prof-col-lg">
-                    <div class="prof-image"><img src="../assets/img/notebook.jpg" alt=""></div>
-                    <div class="prof-layer">
-                        <button class="prof-btn">مشاهده</button>
-
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/notebook.jpg" alt=""></div>
+                        <div class="prof-layer">
+                            <button class="prof-btn">مشاهده</button>
+                        </div>
                     </div>
-                    <div class="prof-image"><img src="../assets/img/rocks.jpg" alt=""></div>
-                    <div class="prof-image"><img src="../assets/img/sound.jpg" alt=""></div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/rocks.jpg" alt=""></div>
+                        <div class="prof-layer">
+                            <button class="prof-btn">مشاهده</button>
+                        </div>
+                    </div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/sound.jpg" alt=""></div>
+                        <div class="prof-layer">
+                            <button class="prof-btn">مشاهده</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="prof-col-lg">
-                    <div class="prof-image"><img src="../assets/img/workbench.jpg" alt=""></div>
-                    <div class="prof-image"><img src="../assets/img/bridge.jpg" alt=""></div>
-                    <div class="prof-image"><img src="../assets/img/gondol.jpg" alt=""></div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/workbench.jpg" alt=""></div>
+                        <div class="prof-layer"><button class="prof-btn">مشاهده</button></div>
+                    </div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/bridge.jpg" alt=""></div>
+                        <div class="prof-layer"><button class="prof-btn">مشاهده</button></div>
+                    </div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/gondol.jpg" alt=""></div>
+                        <div class="prof-layer"><button class="prof-btn">مشاهده</button></div>
+                    </div>
                 </div>
                 <div class="prof-col-lg">
-                    <div class="prof-image"><img src="../assets/img/sound.jpg" alt=""></div>
-                    <div class="prof-image"><img src="../assets/img/gondol.jpg" alt=""></div>
-                    <div class="prof-image"><img src="../assets/img/workbench.jpg" alt=""></div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/sound.jpg" alt=""></div>
+                        <div class="prof-layer"><button class="prof-btn">مشاهده</button></div>
+                    </div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/gondol.jpg" alt=""></div>
+                        <div class="prof-layer"><button class="prof-btn">مشاهده</button></div>
+                    </div>
+                    <div class="prof-wrap">
+                        <div class="prof-image"><img src="../assets/img/workbench.jpg" alt=""></div>
+                        <div class="prof-layer"><button class="prof-btn">مشاهده</button></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <footer>
-    <h2 id="demo14">14. Shine</h2>
-    <div class="hover14 column">
-        <div>
-            <figure><img src="https://picsum.photos/300/200?image=244"/></figure>
-            <span>Hover</span>
+    <section class="footer">
+        <div class="container-fluid">
+        <div class="comeback">
+            <a href="../ShowPanoramaTour/ShowPanoramaTour%20-%20Amlak.html" class="back-link">بازگشت به صفحه قبل</a>
         </div>
-        <div>
-            <figure><img src="https://picsum.photos/300/200?image=1024"/></figure>
-            <span>Hover</span>
         </div>
-        <div>
-            <figure><img src="https://picsum.photos/300/200?image=611"/></figure>
-            <span>Hover</span>
-        </div>
-    </div>
+    </section>
 
-    <h2 id="demo15">15. Circle</h2>
-    <div class="hover15 column">
-        <div>
-            <figure><img src="https://picsum.photos/300/200?image=244"/></figure>
-            <span>Hover</span>
-        </div>
-        <div>
-            <figure><img src="https://picsum.photos/300/200?image=1024"/></figure>
-            <span>Hover</span>
-        </div>
-        <div>
-            <figure><img src="https://picsum.photos/300/200?image=611"/></figure>
-            <span>Hover</span>
-        </div>
-    </div>
 </footer>
 
 
@@ -104,6 +110,13 @@
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
+    $(".image-box .prof-wrap").hover(function () {
+            $(this).addClass("style-hover-prof-wrap-image");
+        },
+        function () {
+            $(this).removeClass("style-hover-prof-wrap-image");
+        }
+    );
 </script>
 </body>
 </html>

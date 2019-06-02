@@ -127,6 +127,7 @@ body {
     justify-content: flex-start;
     align-items: center;
 font-size: 1.5rem;
+    cursor: pointer;
 }
 /*.tour .tour-btn-open:after{
     content: '\f104';
@@ -142,6 +143,7 @@ font-size: 1.5rem;
     opacity: 1;
     font-size: 1.3rem;
     text-shadow: 3px 3px 6px black;
+    cursor: pointer;
 }
 .tour .tour-info{
     position: absolute;
