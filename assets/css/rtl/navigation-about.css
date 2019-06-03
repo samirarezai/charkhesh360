@@ -55,7 +55,7 @@
     transition: all .3s;
 }
 .navigation .nav-item .nav-link:hover{
-    color: rgba(199,199,199,.7);
+    color:#d72821;
 }
 .navigation .navbar-light .navbar-toggler{
     color: #fff;
@@ -108,7 +108,7 @@
     .actived{
         width: 3px;
         height: 3px;
-        background-color: red;
+        background-color:#d72821;
         position: relative;
         top: -2px;
         right:49%;

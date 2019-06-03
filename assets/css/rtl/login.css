@@ -16,6 +16,7 @@
     height: 100%;
 z-index: -1;
 }
+
 .login-wrap{
     position: absolute;
     top:0;
@@ -25,12 +26,128 @@ z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: IRANSans;
 }
+
 .login-wrap .box-login{
-    background-color: red;
-min-height: 400px;
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #d72821, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #d72821, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 10px ridge #D72821;
+    border-radius: 40px 40px 40px 40px;*/
+    opacity: .9;
+    border-radius: 8px;
 }
+.login-wrap .login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrap .login-head{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Shabnam;
+}
+.login-wrap .image{
+    margin: 10px 0 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login-wrap .box-login img{
-    max-width: 50px;
+    max-width: 40px;
     height: auto;
+}
+.login-wrap .login-title{
+    margin: 10px 0;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.login-wrap .form-group{
+    padding: 0px;
+    color: #fff;
+}
+.login-wrap .form-group:not(.--not){
+    border-bottom: 1px solid #ffffff52;
+    width: 75%;
+}
+.login-wrap .form-control{
+    padding: 0;
+    font-size: .9rem;
+    background-color: transparent;
+     border: 0px solid #ced4da;
+border-radius: 0;
+    color: #fff;
+}
+.login-wrap .input-group-prepend .fa{
+   color: #fff;
+}
+.login-wrap .input-group-text {
+ background-color:transparent !important;
+border:0px solid #ced4da;
+border-radius:0rem;
+    padding-right:4px;
+}
+.login-wrap .form-control::-moz-placeholder {
+    color:#fff;
+    opacity: 1;
+}
+.login-wrap .form-control:-ms-input-placeholder {
+    color:#fff;
+}
+.login-wrap .form-control::-webkit-input-placeholder {
+    color:#d4d2d3;
+}
+
+.login-wrap .form-check{
+    font-size: .8rem;
+}
+.form-check-input {
+    margin-top: 0.25rem;
+
+}
+.login-wrap .btn-login{
+    color: #000;
+    padding: 5px 20px;
+    margin-top: 25px;
+    border: 5px outset #FFFFFF;
+    border-radius: 40px 40px 40px 40px;
+}
+.login-wrap .login-footer{
+    margin: 15px 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+.login-wrap .login-footer .enroll,.login-wrap .login-footer .forget{
+    font-size: .8rem;
+    color: #bbb8b8;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
 }
