@@ -44,12 +44,12 @@ padding: 10px;
 text-align: right;
 }
 .price .card-pricing .box .box-item{
-padding: 15px 50px;
+padding: 11px 50px;
     font-size: .8rem;
     position: relative;
     color: #767676;
 }
-.price .card-pricing .box .box-item:before{
+/*.price .card-pricing .box .box-item:before{
     content: '';
     width: 30px;
     height: 30px;
@@ -62,17 +62,29 @@ padding: 15px 50px;
     align-items: center;
     justify-content: space-around;
 
-}
+}*/
 .price .card-pricing .box{
-    padding: 10px 10px 0;
+    padding: 10px 0px 0;
 }
-
+.price .card-pricing .box .box-item{
+    display: flex;
+    align-items: center;
+}
+.price .card-pricing .box .box-item .fa{
+   margin-left:5px ;
+    font-size: 1rem;
+    border: 3px solid #d72821;
+    border-radius: 50%;
+    width: 27px;
+    height:27px;
+    padding: 2px 3px;
+}
 .price .card-pricing .box .box-item p{
     margin: 0;
     display: inline;
     border-bottom: 1px dotted #b9b8b8;
 }
-.price .card-pricing .box .box-item:nth-child(1):after{
+/*.price .card-pricing .box .box-item:nth-child(1):after{
 content: '\f04b';
 color: #777;
 font-family: FontAwesome;
@@ -107,7 +119,7 @@ font-size: 1rem;
     top: 12px;
     right:13px;
     font-size: 1rem;
-}
+}*/
 .price .content{
     display: flex;
     justify-content: center;
