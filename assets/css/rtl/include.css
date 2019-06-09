@@ -151,7 +151,7 @@ margin:2rem 0 0;
         font-size:1.7rem;
 
     }
-    .modal-dialog {
+    .include .modal-dialog {
         max-width: 900px;
         margin: 2.75rem auto;
     }

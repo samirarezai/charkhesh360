@@ -158,6 +158,75 @@ padding: 0;
 .price .foot p{
    margin: 0;
 }
+.price .modal{
+    overflow: hidden;
+}
+.price .modal .modal--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 0px solid #dadada;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3rem;
+}
+.price .modal .modal--header:after{
+    content: '';
+    width: 300px;
+    height:90px;
+
+    position: absolute;
+    top: -21px;
+    right: -7px;
+    border-radius: 30% 70% 46% 54% / 45% 31% 69% 55%  ;
+    overflow: hidden;
+}
+.price .modal.gold-pack .modal--header:after{
+    background-color: #f3cb18;
+}
+.price .modal.silver-pack .modal--header:after{
+    background-color: #C0C0C0;
+}
+.price .modal .modal-title{
+    color: #000;
+    padding-right: 50px;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+.price .modal .close{
+    align-self: flex-start;
+    display: block;
+    float: left;
+    font-size: 2rem;
+}
+.price .modal-number{
+    border:3px outset #D72821;
+    border-radius: 40px 0px 40px 40px;
+    display: inline-block;
+    padding:2px 5px;
+}
+.price .modal-box{
+    text-align: left;
+}
+.price .modal-number .fa{
+    margin-right: 4px;
+    color: #d72821;
+    animation: chickchick;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+}
+@keyframes chickchick {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(20deg);color: darkred;}
+    100%{transform: rotate(0deg);}
+}
+@media screen and (min-width: 992px){
+    .price .modal-dialog {
+        max-width: 600px;
+        margin: 2.75rem auto;
+    }
+}
 /*==========================for suggest========================*/
 .price .card-pricing.suggest{
     border: 1px solid #d72821;
